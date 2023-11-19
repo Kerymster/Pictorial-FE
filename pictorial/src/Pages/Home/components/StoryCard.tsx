@@ -1,7 +1,7 @@
 import React from "react";
-import { IStory } from "@src/Components/interfaces";
 import { APP_ROUTES } from "../../../Shared/route.enums";
 import { useNavigate } from "react-router-dom";
+import { IStory } from "../../../Components/interfaces/index";
 
 interface IStoryCard {
   story: IStory;

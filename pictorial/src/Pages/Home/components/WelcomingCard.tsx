@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { data } from "../constants/welcoming-card";
+import { data } from "../../../Components/constants/welcoming-card";
 
 export default function WelcomingCard() {
   const navigate = useNavigate();

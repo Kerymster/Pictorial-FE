@@ -3,3 +3,10 @@ export enum MAIN_ROUTES {
   HOME = "/home",
   LOGIN = "/login",
 }
+
+export enum APP_ROUTES {
+  HOME = "/home",
+  ABOUT = "/about",
+  STORYDETAIL = "/story-detail",
+  NOTFOUND = "*",
+}

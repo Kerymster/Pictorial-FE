@@ -108,10 +108,10 @@ export default function About() {
         <div className="text-lg max-w-prose mx-auto">
           <h1>
             <span className="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">
-              Introducing
+              A true story
             </span>
             <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              JavaScript for Beginners
+              From the Lens
             </span>
           </h1>
           <p className="mt-8 text-xl text-gray-500 leading-8">
@@ -127,10 +127,10 @@ export default function About() {
             sed <strong>eget risus enim</strong>. Mattis mauris semper sed amet
             vitae sed turpis id. Id dolor praesent donec est. Odio penatibus
             risus viverra tellus varius sit neque erat velit. Faucibus commodo
-            massa rhoncus, volutpat. Dignissim sed eget risus enim.{" "}
-            <a href="#">Mattis mauris semper</a> sed amet vitae sed turpis id.
+            massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis
+            mauris semper sed amet vitae sed turpis id.
           </p>
-          <ul role="list">
+          <ul>
             <li>Quis elit egestas venenatis mattis dignissim.</li>
             <li>
               Cras cras lobortis vitae vivamus ultricies facilisis tempus.

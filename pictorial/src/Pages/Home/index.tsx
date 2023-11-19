@@ -1,12 +1,12 @@
-import BlogMainTemp from "../../Components/sections/BlogMainTemp";
+import LatestStories from "./components/LatestStories";
 import React from "react";
-import WelcomingCard from "../../Components/sections/WelcomingCard";
+import WelcomingCard from "./components/WelcomingCard";
 
 const Home = () => {
   return (
     <div>
       <WelcomingCard />
-      <BlogMainTemp />
+      <LatestStories />
     </div>
   );
 };

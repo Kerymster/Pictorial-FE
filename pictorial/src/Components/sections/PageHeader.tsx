@@ -1,57 +1,13 @@
 import { Fragment, useState } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
-import {
-  ArrowPathIcon,
-  Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
-import {
-  ChevronDownIcon,
-  PhoneIcon,
-  PlayCircleIcon,
-} from "@heroicons/react/20/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { useNavigate } from "react-router-dom";
-
-const products = [
-  {
-    name: "Analytics",
-    description: "Get a better understanding of your traffic",
-    href: "#",
-    icon: ChartPieIcon,
-  },
-  {
-    name: "Engagement",
-    description: "Speak directly to your customers",
-    href: "#",
-    icon: CursorArrowRaysIcon,
-  },
-  {
-    name: "Security",
-    description: "Your customers’ data will be safe and secure",
-    href: "#",
-    icon: FingerPrintIcon,
-  },
-  {
-    name: "Integrations",
-    description: "Connect with third-party tools",
-    href: "#",
-    icon: SquaresPlusIcon,
-  },
-  {
-    name: "Automations",
-    description: "Build strategic funnels that will convert",
-    href: "#",
-    icon: ArrowPathIcon,
-  },
-];
-const callsToAction = [
-  { name: "Watch demo", href: "#", icon: PlayCircleIcon },
-  { name: "Contact sales", href: "#", icon: PhoneIcon },
-];
+import {
+  callsToAction,
+  pageHeaderLinks,
+  products,
+} from "../constants/page-header";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -96,7 +52,7 @@ export default function Header() {
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-              Product
+              Gallery
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
                 aria-hidden="true"
@@ -156,16 +112,14 @@ export default function Header() {
               </Popover.Panel>
             </Transition>
           </Popover>
-
-          <div className="text-sm font-semibold leading-6 text-gray-900">
-            Features
-          </div>
-          <div className="text-sm font-semibold leading-6 text-gray-900">
-            Marketplace
-          </div>
-          <div className="text-sm font-semibold leading-6 text-gray-900">
-            Company
-          </div>
+          {pageHeaderLinks.map((link) => (
+            <div
+              className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer"
+              onClick={() => navigate(link.href)}
+            >
+              {link.name}
+            </div>
+          ))}
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <div className="text-sm font-semibold leading-6 text-gray-900">

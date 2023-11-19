@@ -127,10 +127,10 @@ export default function About() {
             sed <strong>eget risus enim</strong>. Mattis mauris semper sed amet
             vitae sed turpis id. Id dolor praesent donec est. Odio penatibus
             risus viverra tellus varius sit neque erat velit. Faucibus commodo
-            massa rhoncus, volutpat. Dignissim sed eget risus enim.{" "}
-            <a href="#">Mattis mauris semper</a> sed amet vitae sed turpis id.
+            massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis
+            mauris semper sed amet vitae sed turpis id.
           </p>
-          <ul role="list">
+          <ul>
             <li>Quis elit egestas venenatis mattis dignissim.</li>
             <li>
               Cras cras lobortis vitae vivamus ultricies facilisis tempus.

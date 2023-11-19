@@ -14,6 +14,7 @@ import {
   PhoneIcon,
   PlayCircleIcon,
 } from "@heroicons/react/20/solid";
+import { useNavigate } from "react-router-dom";
 
 const products = [
   {
@@ -58,6 +59,7 @@ function classNames(...classes: string[]) {
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <header className="bg-white">
@@ -65,12 +67,15 @@ export default function Header() {
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
-        <div className="flex lg:flex-1">
+        <div
+          className="flex lg:flex-1 cursor-pointer"
+          onClick={() => navigate("/home")}
+        >
           <div className="-m-1.5 p-1.5">
             <span className="sr-only">Pictorial</span>
             <img
               className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+              src="https://tailwindui.com/img/logos/mark.svg?color=grey&shade=900"
               alt=""
             />
           </div>

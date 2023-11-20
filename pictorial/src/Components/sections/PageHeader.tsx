@@ -122,8 +122,13 @@ export default function Header() {
           ))}
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <div className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
+          <div className="inline-flex rounded-md shadow">
+            <button
+              onClick={() => navigate("/create-edit-story")}
+              className="inline-flex items-center justify-center px-3 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-900 hover:bg-gray-600"
+            >
+              + Create Story
+            </button>
           </div>
         </div>
       </nav>
@@ -195,8 +200,13 @@ export default function Header() {
                 </div>
               </div>
               <div className="py-6">
-                <div className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                  Log in
+                <div className="inline-flex rounded-md shadow">
+                  <button
+                    onClick={() => navigate("/create-edit-story")}
+                    className="inline-flex items-center justify-center px-3 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-900 hover:bg-gray-600"
+                  >
+                    Create Story
+                  </button>
                 </div>
               </div>
             </div>

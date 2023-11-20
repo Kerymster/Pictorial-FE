@@ -6,6 +6,8 @@ import { NotFound } from "./Pages/404NotFound/notFound.lazy";
 import { About } from "./Pages/About/about.lazy";
 import { APP_ROUTES } from "./Shared/route.enums";
 import { StoryDetail } from "./Pages/StoryDetail/story-detail.lazy";
+import { Stories } from "./Pages/Stories/stories.lazy";
+import { CreateEditStory } from "./Pages/CreateEditStory/create-edit-story.lazy";
 
 function App() {
   const location = useLocation();
@@ -26,7 +28,12 @@ function App() {
         <Routes>
           <Route path={APP_ROUTES.HOME} element={<Home />} />
           <Route path={APP_ROUTES.ABOUT} element={<About />} />
+          <Route path={APP_ROUTES.STORIES} element={<Stories />} />
           <Route path={APP_ROUTES.STORYDETAIL} element={<StoryDetail />} />
+          <Route
+            path={APP_ROUTES.CREATEEDITSTORY}
+            element={<CreateEditStory />}
+          />
           <Route path={APP_ROUTES.NOTFOUND} element={<NotFound />} />
         </Routes>
       </main>

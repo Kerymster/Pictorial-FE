@@ -1,4 +1,8 @@
+import { APP_ROUTES } from "../../Shared/route.enums";
+import { useNavigate } from "react-router-dom";
+
 export default function StoryDetail() {
+  const navigate = useNavigate();
   return (
     <div className="py-16 bg-gray-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 space-y-8 sm:px-6 lg:px-8">
@@ -124,7 +128,10 @@ export default function StoryDetail() {
                 </button>
               </div>
               <div className="rounded-md shadow ml-4">
-                <button className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50">
+                <button
+                  onClick={() => navigate(APP_ROUTES.STORIES)}
+                  className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50"
+                >
                   Back To Stories
                 </button>
               </div>

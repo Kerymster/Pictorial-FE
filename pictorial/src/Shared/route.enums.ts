@@ -8,6 +8,7 @@ export enum APP_ROUTES {
   HOME = "/home",
   ABOUT = "/about",
   STORIES = "/stories",
+  CREATEEDITSTORY = "/create-edit-story",
   GALLERY = "/gallery",
   MARKETPLACE = "/marketplace",
   STORYDETAIL = "/story-detail",

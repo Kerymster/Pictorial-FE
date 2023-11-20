@@ -17,6 +17,8 @@ import "react-toastify/dist/ReactToastify.css";
 import "./index.css";
 import { MAIN_ROUTES } from "./Shared/route.enums";
 import reportWebVitals from "./reportWebVitals";
+import { Provider } from "react-redux";
+import { store } from "./store";
 
 dayjs.extend(updateLocale);
 dayjs.extend(isoWeek);
@@ -26,25 +28,27 @@ const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-  <Router>
-    <Suspense fallback={<div>Loading...</div>}>
-      <ToastContainer
-        position="top-right"
-        autoClose={3000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
-      <Routes>
-        {/* <Route path={MAIN_ROUTES.LOGIN} element={<Login />} /> */}
-        <Route path={MAIN_ROUTES.MAIN} element={<App />} />
-      </Routes>
-    </Suspense>
-  </Router>
+  <Provider store={store}>
+    <Router>
+      <Suspense fallback={<div>Loading...</div>}>
+        <ToastContainer
+          position="top-right"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
+        <Routes>
+          {/* <Route path={MAIN_ROUTES.LOGIN} element={<Login />} /> */}
+          <Route path={MAIN_ROUTES.MAIN} element={<App />} />
+        </Routes>
+      </Suspense>
+    </Router>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -9,6 +9,7 @@ export const posts = [
     title: "Boost your conversion rate",
     href: "#",
     category: { name: "Article", href: "#" },
+    tag: "Street",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
     date: "Mar 16, 2020",
@@ -27,6 +28,7 @@ export const posts = [
     title: "How to use search engine optimization to drive sales",
     href: "#",
     category: { name: "Video", href: "#" },
+    tag: "Street",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.",
     date: "Mar 10, 2020",
@@ -45,6 +47,7 @@ export const posts = [
     title: "Improve your customer experience",
     href: "#",
     category: { name: "Case Study", href: "#" },
+    tag: "Street",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.",
     date: "Feb 12, 2020",
@@ -63,6 +66,7 @@ export const posts = [
     title: "Boost your conversion rate",
     href: "#",
     category: { name: "Article", href: "#" },
+    tag: "Street",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
     date: "Mar 16, 2020",
@@ -81,6 +85,7 @@ export const posts = [
     title: "How to use search engine optimization to drive sales",
     href: "#",
     category: { name: "Video", href: "#" },
+    tag: "Street",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.",
     date: "Mar 10, 2020",
@@ -99,6 +104,7 @@ export const posts = [
     title: "Improve your customer experience",
     href: "#",
     category: { name: "Case Study", href: "#" },
+    tag: "Street",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.",
     date: "Feb 12, 2020",

@@ -1,6 +1,7 @@
 export interface IStory {
   title: string;
   href: string;
+  tag: string;
   category: IStoryCategory;
   description: string;
   date: string;

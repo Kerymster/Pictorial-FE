@@ -8,6 +8,7 @@ export const posts = [
   {
     title: "Boost your conversion rate",
     href: "#",
+    image: "image",
     category: { name: "Article", href: "#" },
     tag: "Street",
     description:
@@ -27,6 +28,7 @@ export const posts = [
   {
     title: "How to use search engine optimization to drive sales",
     href: "#",
+    image: "image",
     category: { name: "Video", href: "#" },
     tag: "Street",
     description:
@@ -46,6 +48,7 @@ export const posts = [
   {
     title: "Improve your customer experience",
     href: "#",
+    image: "image",
     category: { name: "Case Study", href: "#" },
     tag: "Street",
     description:
@@ -65,6 +68,7 @@ export const posts = [
   {
     title: "Boost your conversion rate",
     href: "#",
+    image: "image",
     category: { name: "Article", href: "#" },
     tag: "Street",
     description:
@@ -84,6 +88,7 @@ export const posts = [
   {
     title: "How to use search engine optimization to drive sales",
     href: "#",
+    image: "image",
     category: { name: "Video", href: "#" },
     tag: "Street",
     description:
@@ -103,6 +108,7 @@ export const posts = [
   {
     title: "Improve your customer experience",
     href: "#",
+    image: "image",
     category: { name: "Case Study", href: "#" },
     tag: "Street",
     description:

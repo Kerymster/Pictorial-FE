@@ -8,14 +8,25 @@ import { IStory } from "../../interfaces";
 import { FormInput } from "../../Components/form-input";
 import { FormTextAreaInput } from "../../Components/form-text-area-input";
 import { useState } from "react";
+import { useAddStoryMutation } from "../../Services/pictorialApi";
 
 export default function CreateEditStory() {
+  const [addStory] = useAddStoryMutation();
   const [base64, setBase64] = useState<string>();
   const selectedStory = {};
 
-  const handleSubmit = (values: Partial<IStory>) => {
+  const handleSubmit = async (values: Partial<IStory>) => {
     let payload = { ...values, image: base64 };
     console.log(payload);
+
+    if (payload) {
+      try {
+        await addStory(payload);
+        // Handle success
+      } catch (error) {
+        // Handle error
+      }
+    }
   };
 
   const handleImageUpload = (e: any) => {
@@ -36,6 +47,7 @@ export default function CreateEditStory() {
   const post = {
     title: "Boost your conversion rate",
     href: "#",
+    image: "image",
     tag: "Street",
     category: { name: "Article", href: "#" },
     description:

@@ -1,14 +1,15 @@
 export interface IStory {
   title: string;
-  href: string;
+  href?: string;
   tag: string;
-  category: IStoryCategory;
+  image: string;
+  category?: IStoryCategory;
   description: string;
-  date: string;
-  datetime: string;
-  readingTime: string;
-  imageUrl: string;
-  author: IAuthor;
+  date?: string;
+  datetime?: string;
+  readingTime?: string;
+  author?: IAuthor;
+  imageUrl?: string;
 }
 
 export interface IStoryCategory {
